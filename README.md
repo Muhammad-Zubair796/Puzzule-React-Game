@@ -51,3 +51,29 @@ src/
 ├── words.js        # The list of possible secret words
 ├── utils.js        # Helper functions
 └── App.jsx         # Main game logic and state
+```
+## 💻 How to Run Locally
+Clone the repository:
+
+```Bash
+
+git clone [https://github.com/Muhammad-Zubair796/Puzzule-React-Game.git](https://github.com/Muhammad-Zubair796/Puzzule-React-Game.git)
+```
+## Install dependencies:
+
+```Bash
+
+npm install
+```
+## Start the development server:
+
+```Bash
+
+npm run dev
+```
+## 👤 Author
+Muhammad Zubair
+
+GitHub: @Muhammad-Zubair796
+
+### Show some love by starring ⭐ this repository if you like the project!
