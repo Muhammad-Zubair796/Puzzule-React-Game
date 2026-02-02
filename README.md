@@ -1,6 +1,3 @@
-
-
-```markdown
 # 🧩 Assembly Game: Save the World from Assembly!
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
@@ -16,7 +13,7 @@ An interactive, programming-themed word guessing game. Your mission is to guess 
 
 ## 📸 Game Preview
 
-| Game Over State | Game in progress |
+| Game in Progress | Game Over State |
 | :---: | :---: |
 | <img src="1.PNG" width="400" alt="Gameplay screenshot"> | <img src="2.PNG" width="400" alt="Game Over screenshot"> |
 
@@ -39,9 +36,9 @@ An interactive, programming-themed word guessing game. Your mission is to guess 
 The game uses React `useState` hooks to track `currentWord` and the list of `guessedLetters`.
 
 ### Logic & Effects
-* **Derived State:** Variables like `wrongGuessCount` and `isGameOver` are calculated on every render to ensure the UI is always in sync without unnecessary state variables.
+* **Derived State:** Variables like `wrongGuessCount` and `isGameOver` are calculated on every render.
 * **Side Effects:** The `useEffect` hook monitors the game status to trigger the confetti celebration at the exact moment of victory.
-* **Conditional Styling:** Uses the `clsx` utility to manage complex CSS class logic for the keyboard and language chips.
+* **Conditional Styling:** Uses the `clsx` utility to manage complex CSS class logic.
 
 ---
 
@@ -50,50 +47,7 @@ The game uses React `useState` hooks to track `currentWord` and the list of `gue
 ```text
 src/
 ├── components/     # React components
-├── languages.js    # Data for the programming languages (colors/names)
+├── languages.js    # Data for the programming languages
 ├── words.js        # The list of possible secret words
-├── utils.js        # Helper functions (getRandomWord, getFarewellText)
+├── utils.js        # Helper functions
 └── App.jsx         # Main game logic and state
-
-```
-
----
-
-## 💻 How to Run Locally
-
-1. Clone the repository:
-```bash
-git clone [https://github.com/Muhammad-Zubair796/Puzzule-React-Game.git](https://github.com/Muhammad-Zubair796/Puzzule-React-Game.git)
-
-```
-
-
-2. Install dependencies:
-```bash
-npm install
-
-```
-
-
-3. Start the development server:
-```bash
-npm run dev
-
-```
-
-
-
----
-
-## 👤 Author
-
-**Muhammad Zubair**
-
-* GitHub: [@Muhammad-Zubair796](https://www.google.com/search?q=https://github.com/Muhammad-Zubair796)
-
----
-
-*Show some love by starring ⭐ this repository if you like the project!*
-
-```
-
