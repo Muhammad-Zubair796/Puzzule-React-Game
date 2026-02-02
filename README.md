@@ -13,7 +13,7 @@ An interactive, programming-themed word guessing game. Your mission is to guess 
 
 ## 📸 Game Preview
 
-| Game in Progress | Game Over State |
+| Game won status | Game in progress |
 | :---: | :---: |
 | <img src="1.PNG" width="400" alt="Gameplay screenshot"> | <img src="2.PNG" width="400" alt="Game Over screenshot"> |
 
