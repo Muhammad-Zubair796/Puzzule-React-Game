@@ -1,6 +1,6 @@
 
 
-```
+```markdown
 # 🧩 Assembly Game: Save the World from Assembly!
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
@@ -14,33 +14,34 @@ An interactive, programming-themed word guessing game. Your mission is to guess 
 
 ---
 
+## 📸 Game Preview
+
+| Game Over State | Game in progress |
+| :---: | :---: |
+| <img src="1.PNG" width="400" alt="Gameplay screenshot"> | <img src="2.PNG" width="400" alt="Game Over screenshot"> |
+
+---
+
 ## 🚀 Key Features
 
 * **Interactive Virtual Keyboard:** Tracks your guesses with real-time color feedback (Green for Correct, Red for Wrong).
 * **Visual Life System:** Watch as languages like JavaScript, Python, and Ruby disappear with every mistake.
 * **Dynamic Word Reveal:** If you lose, the game automatically reveals the letters you missed in red.
 * **Celebration Logic:** Integrated `canvas-confetti` library to celebrate your wins.
-* **Screen Reader Accessible:** Built with ARIA live regions and semantic HTML for a better experience for all users.
-* **Responsive Design:** Optimized for both mobile and desktop screens.
+* **Screen Reader Accessible:** Built with ARIA live regions and semantic HTML.
+* **Responsive Design:** Fully optimized for mobile and desktop screens.
 
 ---
 
 ## 🛠️ Technical Implementation
 
 ### State Management
-The game uses multiple React `useState` hooks to track:
-* `currentWord`: The random target word.
-* `guessedLetters`: An array containing all unique letters selected by the user.
+The game uses React `useState` hooks to track `currentWord` and the list of `guessedLetters`.
 
-### Derived State & Logic
-To keep the code clean and performant, several variables are calculated during the render phase:
-* `wrongGuessCount`: Computed by filtering `guessedLetters` against the `currentWord`.
-* `isGameOver`: A boolean derived from win/loss conditions.
-* `farewellMessage`: Logic that triggers a "goodbye" message to the language currently being lost.
-
-### Performance Optimization
-* **useEffect Hook:** Used to trigger the confetti celebration only once at the exact moment `isGameWon` becomes true.
-* **Clsx Utility:** Used for clean conditional class management in the keyboard and status sections.
+### Logic & Effects
+* **Derived State:** Variables like `wrongGuessCount` and `isGameOver` are calculated on every render to ensure the UI is always in sync without unnecessary state variables.
+* **Side Effects:** The `useEffect` hook monitors the game status to trigger the confetti celebration at the exact moment of victory.
+* **Conditional Styling:** Uses the `clsx` utility to manage complex CSS class logic for the keyboard and language chips.
 
 ---
 
@@ -93,4 +94,6 @@ npm run dev
 ---
 
 *Show some love by starring ⭐ this repository if you like the project!*
+
+```
 
